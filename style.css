@@ -9,7 +9,7 @@
   /* Style the header */
   header 
     {
-    background-color: rgb(233, 211, 168);
+    background-color: rgb(219, 181, 109);
     padding: 30px;
     text-align: center;
     font-size: 32px;
@@ -79,7 +79,7 @@
     padding: 20px;
     width: 75%;
     height: 660px;
-    background-color: #f1f1f1;
+    background-color: rgba(219, 181, 109, 0.678);
   }
   
   /* NOVO: Estilo para o iframe dentro do article */
@@ -88,7 +88,13 @@
     height: 100%;
     border: none;
   }
-  
+   
+  .intro-texto{
+    text-align: center;
+    font-size: 23.5px;
+  }
+
+
   /* Clear floats after the columns */
   section::after {
     content: "";

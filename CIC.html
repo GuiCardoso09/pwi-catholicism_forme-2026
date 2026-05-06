@@ -47,7 +47,8 @@
           </div>
       </div><br>
           <i>A remissão dos pecados</i><br>
-        <i>A Ressurreição para uma nova Vida</i>
+        <div class="container-hover">
+          <i>A Ressurreição para uma nova Vida</i>
         <div class="lista-suspensa">
             <ul>
               <li>A Ressurreição com Cristo</li>
@@ -77,38 +78,32 @@
       </div><br>
     </nav>
     
-    <article id="meu-article">  
-      <!-- Introdução que aparece ao carregar o site -->
-      <div id="intro-texto">
-        <h2 style="font"><i>Que a Graça de Nosso Senhor Jesus Cristo, o Amor do Pai e a Comunhão do Espírito Santos estejam convosco.</i></h2>
-        <p>Selecione um dos temas no menu ao lado para explorar os pilares da nossa fé.</p>
+    <article> 
+      <div id="intro-texto" class="intro-texto">
+        <h2 style="font-size:43px;"><i>Que a Graça de Nosso Senhor Jesus Cristo, o Amor do Pai e a Comunhão do Espírito Santos estejam convosco.</i></h2>
+        <p>Você já se perguntou onde encontrar <mark>TODA</mark> a doutrina da Igreja Católica de maneira <b>fácil, rápida e detalhada?</b><mark>Sem mentiras, mitos ou eufemismos</mark>
+        diante da Verdade e do que diz a instituição da Santa Sé? Diante de tantas informações de fontes diferentes neste mundo globalizado, não sabe nem se quer por onde começar a 
+        <b style="font-family: Open-sans;">encontrar todo o Catolicismo em qualquer lugar do mundo?</b> Bem, se este é seu objetivo, você está no lugar certo!</p><br>
+        <p>Seja bem vindo meu irmão ou minha irmã, ao <b></b></p>
       </div>
-    
-      <!-- Iframe que começa oculto -->
-      <iframe name="conteudo-pilar" id="iframe-conteudo" style="display:none;" src="about:blank"></iframe>
-    </article>
+     <iframe name="conteudo-pilar" id="iframe-conteudo" style="display:none;" src="about:blank"></iframe>
+</article>
   
   </section>
 
   <footer>
+    <form>
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname"><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname">
+</form>
     <p>Footer</p>
   </footer>
+ <script src="js_intro.js"></script>
   </body>
+</html>
 
-  <script>
-    // Selecionamos todos os links que apontam para o iframe
-    const links = document.querySelectorAll('a[target="conteudo-pilar"]');
-    const intro = document.getElementById('intro-texto');
-    const iframe = document.getElementById('iframe-conteudo');
-  
-    links.forEach(link => {
-      link.addEventListener('click', function() {
-        // Esconde a introdução
-        intro.style.display = 'none';
-        // Mostra o iframe
-        iframe.style.display = 'block';
-      });
-    });
-  </script>
-
-  </html>
+<head>
+    <script src="js_intro.js" defer></script>
+</head>
